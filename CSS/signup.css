@@ -1,0 +1,317 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(197, 255, 0, 0.28);
+}
+
+header {
+  background-color: rgb(51, 8, 91);
+  padding: 35px;
+}
+
+#container {
+  padding: 40px 0 10px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-family: "IranYekan-Bold";
+}
+#form {
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 50px 8px;
+}
+
+label {
+  font-size: 2rem;
+  display: inline-block;
+  width: 124px;
+}
+
+input,
+select {
+  border-radius: 5px;
+  border: 2px solid blue;
+  padding: 8px;
+  width: 250px;
+  margin-right: 20px;
+  font-family: "IranYekan-Regular";
+}
+
+option {
+  width: 360px;
+}
+
+input::placeholder {
+  text-align: center;
+  color: rgb(157, 154, 154);
+  font-family: "IranYekan-Regular";
+}
+
+input:focus {
+  border-radius: 5px;
+  border: 3px solid rgb(11, 12, 69);
+  padding: 8px;
+}
+
+#drname,
+#bime {
+  width: 251px;
+  font-family: "IranYekan-Regular";
+}
+
+#signup-btn {
+  margin-right: 50px;
+}
+
+#btn-sign {
+  font-family: "IranYekan-Regular";
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #c6c9c3;
+  transition: all 0.1s ease-in;
+}
+
+#btn-sign:hover,
+#btn-remove:hover {
+  background-color: #2bae66;
+  color: #f5efee;
+}
+
+#btn-remove {
+  font-family: "IranYekan-Regular";
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #c6c9c3;
+  margin-right: 50px;
+  transition: all 0.1s ease-in;
+}
+
+.infodata {
+  margin-top: 30px;
+}
+
+#user,
+#price {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+#user p,
+#price p {
+  font-size: 1.5rem;
+}
+
+#user button,
+.price-btn {
+  border: none;
+  border-radius: 3px;
+  background-color: #d4dace;
+  padding: 3px;
+  width: 100px;
+  font-family: "IranYekan-Regular";
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+#back {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#back a {
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: chocolate;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+#btn-remove {
+  transition: all 0.2s ease-in;
+}
+#btn-remove:hover {
+  background-color: red;
+}
+
+#modal {
+  background-color: rgba(135, 131, 131, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal > div {
+  background: #fff;
+  width: 500px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#modal span {
+  background-color: red;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#modaltext {
+  margin-top: 40px;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.requiredstar {
+  color: rgb(3, 2, 85);
+}
+
+.price-btn {
+  width: 130px;
+}
+
+#price-update {
+  font-size: 1rem;
+  background-color: #c0ff2c;
+  width: 60px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#price-update:hover {
+  font-size: 1rem;
+  background-color: #ff0000;
+  width: 60px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* for USER DATA */
+#back-userdata {
+  background-color: rgba(135, 131, 131, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#showitem {
+  position: absolute;
+  top: 120px;
+  margin: 100px 500px;
+  background-color: #d6ad60;
+  color: #122620;
+  width: 600px;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+#title {
+  width: 370px;
+  border: 5px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: #fff;
+  margin: 10px 90px 30px 0;
+}
+
+#title span {
+  color: blue;
+}
+
+#check-user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user_item {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.user_item p {
+  font-size: 1.5rem;
+}
+
+#user-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.save-btn {
+  font-family: "IranYekan-Regular";
+  border: none;
+  background-color: rgb(236, 236, 14);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.1s ease-in;
+}
+
+.reject-btn {
+  font-family: "IranYekan-Regular";
+  border: none;
+  background-color: rgb(232, 86, 86);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 7rem;
+  width: 30px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.save-btn:hover {
+  background-color: rgb(157, 157, 21);
+  color: #fff;
+}
+.reject-btn:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+}

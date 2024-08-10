@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "IranYekan-Regular";
+  src: url("../Fonts/IRANYekanWebRegular.woff2");
+}
+
+@font-face {
+  font-family: "IranYekan-Bold";
+  src: url("../Fonts/IRANYekanWebBold.woff2");
+}
+
+@font-face {
+  font-family: "IRANYekanWeb-ExtraBold";
+  src: url("../Fonts/IRANYekanWebExtraBold.woff2");
+}
+
+body {
+  font-family: "IranYekan-Regular";
+}
+
+h1 {
+  font-family: "IranYekan-Bold";
+  font-weight: 800;
+}

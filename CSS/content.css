@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* background-color: rgb(236, 240, 243); */
+  background-color: rgb(127, 223, 155);
+
+}
+a {
+  text-decoration: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#signup-button {
+  background-color: rgb(75, 31, 117);
+  width: 400px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#list-button {
+  background-color: rgb(75, 31, 117);
+  width: 400px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+#signup-button:hover,
+#list-button:hover {
+  background-color: blueviolet;
+  animation: pulse512 1s infinite;
+}
+
+#log-out {
+  font-family: "IranYekan-Regular";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: rgb(245, 21, 21);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+#log-out:hover {
+  background-color: rgb(131, 181, 193);
+  color: #000;
+}
+
+#today_date {
+  font-family: "IranYekan-Regular";
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  color: #66ff00;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(218, 103, 68, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}

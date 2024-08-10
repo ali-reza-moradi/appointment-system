@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #2465f7;
+  --color-secondary: #1e66f72a;
+  --color-background: #f8f8f8;
+  --color-warning: #e9c601;
+  --color-error: #f75e4b;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  background-color: #df4f4f;
+  padding: 5px 0px;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: IranYekan-Bold;
+  font-weight: 900;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+input {
+  border: 1px solid silver;
+  margin-bottom: 50px;
+  padding: 15px;
+  width: 300px;
+  font-size: 1rem;
+  color: var(--color-primary);
+  border-radius: 10px;
+  direction: ltr;
+}
+
+input::placeholder {
+  direction: rtl;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  font-family: IranYekan-Regular;
+}
+
+button {
+  border: none;
+  background-color: #3364d7;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  font-family: IranYekan-Regular;
+}
+
+button:hover {
+  background-color: #c1c1c5;
+  color: var(--color-primary);
+}
+
+a p {
+  margin-left: 10px;
+}
+
+#modal {
+  background-color: rgba(135, 131, 131, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal > div {
+  background: #fff;
+  width: 500px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#modal span {
+  background-color: var(--color-error);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#modaltext {
+  margin-top: 40px;
+  color: var(--color-error);
+}
+
+#back {
+  background-color: #091462;
+  width: 800xp;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#title {
+  font-family: "IranYekan-Bold";
+  font-weight: 900;
+  background-color: #07d92a;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border-radius: 80px 20px;
+  box-shadow: -3px 3px 9px -1px rgba(122, 128, 118, 1);
+}
