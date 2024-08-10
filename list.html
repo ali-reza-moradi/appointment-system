@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIST PAGE</title>
+    <link rel="stylesheet" href="./CSS/list.css" />
+    <link rel="stylesheet" href="./CSS/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="title">
+      <h1>لیست نوبت بیماران</h1>
+    </div>
+    <div id="back">
+      <a href="./content.html">
+        بازگشت به صفحه اصلی
+        <i class="fa-solid fa-left-long"></i>
+      </a>
+    </div>
+
+    <div id="search">
+      <input type="text" placeholder="کد ملی را وارد نمائید" />
+      <button>جست و جو</button>
+
+      <div>
+        <p id="title-drname-search">فیلتر براساس اسم دکتر:</p>
+        <select id="drname-search">
+          <option value="همه">همه</option>
+          <option value="دکتر معصومه رضایی">دکتر معصومه رضایی</option>
+          <option value="دکتر حسام عبدی">دکتر حسام عبدی</option>
+          <option value="دکتر قاسم نوروزی">دکتر قاسم نوروزی</option>
+          <option value="دکتر لیلا عزتی">دکتر لیلا عزتی</option>
+          <option value="دکتر مریم لاله">دکتر مریم لاله</option>
+          <option value="دکتر سیروس هاشمی نژاد">دکتر سیروس هاشمی نژاد</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>ردیف</th>
+            <th>نام و نام خانوادگی</th>
+            <th>نام پدر</th>
+            <th>کد ملی</th>
+            <th>تاریخ تولد</th>
+            <th>نام پزشک</th>
+            <th>نوع خدمت</th>
+            <th>نوع بیمه</th>
+            <th>هزینه</th>
+            <th>کد رهگیری</th>
+            <th>تاریخ نوبت</th>
+            <th>شماره تماس</th>
+            <th>اعمال</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+
+      <section id="back-editbox">
+        <div id="showitem-editbox">
+          <div id="edit-title">
+            <h2>صفحه <span>ویرایش</span> اطلاعات بیمار</h2>
+          </div>
+          <div id="info-editbox">
+            <p class="infotype-editbox">نام :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">نام خانوادگی :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">نام پدر :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">کدملی :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">تاریخ تولد :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">شماره تماس :</p>
+            <input class="infoinput-editbox" type="text" />
+
+            <p class="infotype-editbox">تاریخ نوبت :</p>
+            <input class="infoinput-editbox" type="text" />
+          </div>
+          <div id="editinfo-button">
+            <button class="save-edit-btn">ویرایش</button>
+            <button class="close-edit-btn">بستن</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="./Js/list.js"></script>
+  </body>
+</html>

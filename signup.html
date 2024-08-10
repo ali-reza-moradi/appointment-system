@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGHNUP PAGE</title>
+    <link rel="stylesheet" href="./CSS/signup.css" />
+    <link rel="stylesheet" href="./CSS/font.css" />
+    <link rel="stylesheet" href="./CSS/jspc-royal_blue.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script type="text/javascript" src="./utils/js-persian-cal.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>صفحه نوبت دهی بیماران</h1>
+    </header>
+    <div id="container">
+      <div id="form">
+        <div>
+          <label for="name">نام<span class="requiredstar">*</span>: </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="نام بیمار وارد شود"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="lastname"
+            >نام خانوادگی<span class="requiredstar">*</span> :</label
+          >
+          <input
+            id="lastname"
+            type="text"
+            placeholder="نام خانوادگی بیمار وارد شود"
+          />
+        </div>
+
+        <div>
+          <label for="father-name">نام پدر :</label>
+          <input id="father-name" type="text" placeholder="نام پدر وارد شود" />
+        </div>
+
+        <div>
+          <label for="National-id"
+            >کد ملی<span class="requiredstar">*</span> :</label
+          >
+          <input
+            id="National-id"
+            type="text"
+            placeholder="کد ملی بیمار وارد شود"
+          />
+        </div>
+
+        <div>
+          <label for="pcal8">تاریخ تولد :</label>
+          <input id="pcal8" type="text" class="pdate" />
+        </div>
+
+        <div>
+          <label for="drname">نام پزشک :</label>
+          <select id="drname">
+            <option value="دکتر معصومه رضایی">دکتر معصومه رضایی</option>
+            <option value="دکتر حسام عبدی">دکتر حسام عبدی</option>
+            <option value="دکتر قاسم نوروزی">دکتر قاسم نوروزی</option>
+            <option value="دکتر لیلا عزتی">دکتر لیلا عزتی</option>
+            <option value="دکتر مریم لاله">دکتر مریم لاله</option>
+            <option value="دکتر سیروس هاشمی نژاد">دکتر سیروس هاشمی نژاد</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bime">نوع بیمه :</label>
+          <select class="select-price" id="bime">
+            <option value="all" disabled selected>نوع بیمه مشخص شود</option>
+            <option value="تامین اجتماعی">تامین اجتماعی</option>
+            <option value="نیروهای مسلح">نیروهای مسلح</option>
+            <option value="آزاد">آزاد</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bime">نوع خدمت :</label>
+          <select class="select-price" id="service">
+            <option value="all" disabled selected>نوع خدمت مشخص شود</option>
+            <option value="ویزیت">ویزیت</option>
+            <option value="جراحی">جراحی</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="phone-number">شماره تماس :</label>
+          <input
+            id="phone-number"
+            type="text"
+            placeholder="شماره تماس بیمار وارد شود"
+          />
+        </div>
+
+        <div>
+          <label for="pcal1">تاریخ نوبت :</label>
+          <input
+            id="pcal1"
+            type="text"
+            class="pdate"
+            placeholder="تاریخ دقیق را از تقویم کنار انتخاب کنید"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="signup-btn">
+      <button id="btn-sign">ذخیره</button>
+      <button id="btn-remove">پاک کردن</button>
+    </div>
+
+    <div class="infodata">
+      <div id="price">
+        <p>هزینه:</p>
+        <button class="price-btn">0 تومان</button>
+        <!-- <button id="price-update" class="price-btn">بروزرسانی</button> -->
+      </div>
+
+      <div id="user">
+        <p>نام کاربر:</p>
+        <button></button>
+      </div>
+    </div>
+
+    <div id="back">
+      <a href="./content.html">
+        بازگشت به صفحه اصلی
+        <i class="fa-solid fa-left-long"></i>
+      </a>
+    </div>
+
+    <div id="modal">
+      <div>
+        <div><span id="modal-button">X</span></div>
+        <div><p id="modaltext"></p></div>
+      </div>
+    </div>
+
+    <section id="back-userdata">
+      <div id="showitem">
+        <div id="userdata"></div>
+
+        <div id="user-btn">
+          <button class="save-btn">تائید</button>
+          <button class="reject-btn">رد</button>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./Js/singnup.js"></script>
+    <script type="module" src="./Js/showsavedata.js"></script>
+
+    <script type="text/javascript">
+      var objCal1 = new AMIB.persianCalendar("pcal1");
+      var objCal1 = new AMIB.persianCalendar("pcal8");
+    </script>
+  </body>
+</html>
